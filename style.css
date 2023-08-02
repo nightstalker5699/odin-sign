@@ -1,0 +1,117 @@
+:root {
+    --color:	rgb(40, 40, 43);
+    --font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --color2:#000080
+}
+@font-face {
+    font-family: logo;
+    src: url(./Lumanosimo-Regular.ttf);
+}
+body {
+    background-color: black;
+    
+    display:flex;
+    height: 100vh;
+    margin:0;
+    padding:0;
+
+}
+label,input{
+    display:block
+}
+.design{
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80);
+    background-size:cover;
+    flex:1;
+}
+.logo{
+    
+    gap:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0,0,0.5);
+    position: absolute;
+    top: 25%;
+    padding:20px 0;
+    width: 100%;
+}
+span{
+    color:white;
+    font-family:logo;
+    font-size:4rem;
+}
+.content {
+    background-color: black;
+    flex:1.5;
+    padding-top:15vh; 
+}
+.box > div{
+    padding:0vh 3vw;
+    padding-right:15vw;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color:aliceblue;
+    font-weight: bold;
+    font-family: var(--font);
+    font-size:1.5rem;
+}
+.item input{
+    margin-bottom: 2vh;
+    width:68%;
+    border:2px solid var(--color2);
+    border-radius: 20px;
+    background-color: black;
+    border-color: var(--color2);
+    transition: 0.8s;
+    color:white;
+}
+.item input:focus{
+    width:85%;
+    border-color:white;
+}
+.item label{
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.form{
+    padding:3vh 3vw;
+    padding-right:15vw;
+    margin: 20px 0;
+    background-color: var(--color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0px 10px 20px var(--color2);
+}
+.btn {
+    padding:0vh 3vw;
+    padding-right:15vw;
+    margin: 30px 0;;
+}
+.btn button{
+    padding: 10px 5px;
+    color:var(--color2);
+    background-color: black;
+    border: 2px solid var(--color2);
+    transition: 0.1s;
+    
+}
+.btn button:hover{
+    background-color: var(--color2);
+    color:black;
+    cursor: pointer;
+}
+.btn button:active{
+    transform:translate(4px,4px)
+}
+a{
+    color:var(--color2);
+    text-decoration: none;
+}
